@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <title> Valorant Infos </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Lucas">
+  <meta name="description" content="conteudo de valorant">
+  <meta name="keywords" content="html5, css, js, valorant">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/main.css">
+
+</head>
+
+<body class="no-js">
+
+<!-- Menu -->
+
+  <header class="header">
+    <a href="index.html" class="logo-text">Valorant Infos</a>
+
+    <button style="display: none;" class="header__btnMenu"> <i class="fas fa-bars fa-2x"></i> <span
+        class="sr-only">Menu</span></button>
+
+    <nav class="header__nav">
+      <ul>
+        <li><a href="#">início</a></li>
+        <li><a href="#menu-classes">classes</a></li>
+        <li><a href="#menu-agentes">agentes</a></li>
+        <li><a href="#menu-mapas">mapas</a></li>
+        <li><a href="#menu-armas">armas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Tela principal -->
+
+  <section class="hero">
+    <h1 class="hero__title">
+      FPS tático 5x5
+    </h1>
+    <p class="hero__text">Diversos personagens para você jogar!</p>
+    <a href="https://playvalorant.com/pt-br/" class="hero__btn">Visite o site oficial</a>
+    <div id="menu-classes"></div>
+  </section>
+
+  <!-- Classes de agentes -->
+
+  <div class="container">
+    <section class="agent-cards">
+        <article class="agent-cards__card">
+
+            <img src="img/jett-class.png" alt="jett" class="agent-cards__image">
+
+            <div class="agent-cards__avatar">
+                <img src="img/duelista.png" alt="duelista">
+            </div>
+            <div class="agent-cards__content">
+                <h2 class="agent-cards__title">Duelista</h2>
+                <p class="agent-cards__text">A função de duelista é focada em agentes que possuem habilidades ofensivas. Eles são responsáveis por abrir caminho para a equipe e causam danos em grandes áreas e mais agressivos.</p>
+            </div>
+        </article>
+
+        <article class="agent-cards__card">
+
+            <img src="img/sage-class.png" alt="sage" class="agent-cards__image">
+
+            <div class="agent-cards__avatar">
+                <img src="img/sentinel.png" alt="sentinela">
+            </div>
+            <div class="agent-cards__content">
+                <h2 class="agent-cards__title">Sentinela</h2>
+                <p class="agent-cards__text">Os sentinelas são agentes que são projetados para defender pontos de interesse. Eles são responsáveis ​​por proteger a equipe e impedir que os inimigos avancem. Detectam os adversários, colocam armadilhas e criam zonas seguras.</p>
+            </div>
+        </article>
+
+        <article class="agent-cards__card">
+
+            <img src="img/sova-class.png" alt="sova" class="agent-cards__image">
+
+            <div class="agent-cards__avatar">
+                <img src="img/initiator.png" alt="iniciador">
+            </div>
+            <div class="agent-cards__content">
+                <h2 class="agent-cards__title">Iniciador</h2>
+                <p class="agent-cards__text">Os agentes iniciam os ataques e criam oportunidades para a equipe. Eles possuem habilidades que podem desorientar os inimigos ou revelar suas posições.</p>
+            </div>
+        </article>
+
+        <article class="agent-cards__card">
+
+            <img src="img/omen-class.png" alt="Carousel Img" class="agent-cards__image">
+
+            <div class="agent-cards__avatar">
+                <img src="img/controlador.png" alt="controlador">
+            </div>
+            <div class="agent-cards__content">
+                <h2 class="agent-cards__title">Controlador</h2>
+                <p class="agent-cards__text">Eles são responsáveis por controlar o campo de batalha e impedir que os inimigos avancem. Eles possuem habilidades que podem criar barreiras, cegar os inimigos ou desacelerar seu movimento com smokes.</p>
+            </div>
+        </article>
+        <div id="menu-agentes"></div>
+    </section>
+</div>
+
+<!-- Todos os agentes com card flip -->
+
+  <section  class="flip-agents">
+
+    <div class="flip-agents__title">
+      <div class="container">
+        <h2>agentes</h2>
+      </div>
+    </div>
+
+    <div class="flip-agents__thumbs">
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/astra.jpg" class="flip-card-image" alt="astra">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/controlador.png" alt="controlador-simbolo">
+                <h1>astra</h1>
+                <p>Q - Pulso Nova</p>
+                <p>E - Nebulosa</p>
+                <p>C - Poço Gravitacional</p>
+                <p>X - Divisa Cósmica</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/breach.jpg" class="flip-card-image" alt="breach">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/initiator.png" alt="iniciador-simbolo">
+                <h1>breach</h1>
+                <p>Q - Estopim </p>
+                <p>E - Falha Tectônica</p>
+                <p>C - Pós-Choque</p>
+                <p>X - Onda Trovejante</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/brimstone.jpg" class="flip-card-image" alt="brimstone">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/controlador.png" alt="controlador-simbolo">
+                <h1>brimstone</h1>
+                <p>Q - Incendiário</p>
+                <p>E - Fumaça Celeste</p>
+                <p>C - Sinalizador Estimulante</p>
+                <p>X - Ataque Orbital</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/chamber.jpg" class="flip-card-image" alt="chamber">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/sentinel.png" alt="sentinela-simbolo">
+                <h1>chamber</h1>
+                <p>Q - Caçador de Cabeças</p>
+                <p>E - Rendezvous</p>
+                <p>C - Marca Registrada</p>
+                <p>X - Tour de Force</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/cypher.jpg" class="flip-card-image" alt="cypher">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/sentinel.png" alt="sentinela-simbolo">
+                <h1>cypher</h1>
+                <p>Q - Jaula Cibernética</p>
+                <p>E - Câmera de Vigilância</p>
+                <p>C - Fio-armadilha</p>
+                <p>X - Assalto Neural</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/deadlock.jpg" class="flip-card-image" alt="deadlock">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/sentinel.png" alt="sentinela-simbolo">
+                <h1>deadlock</h1>
+                <p>Q - Sensor Sônico</p>
+                <p>E - Barreira de Contenção</p>
+                <p>C - GravNet</p>
+                <p>X - Aniquilação</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/fade.jpg" class="flip-card-image" alt="fade">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/initiator.png" alt="iniciador-simbolo">
+                <h1>fade</h1>
+                <p>Q - Clausura</p>
+                <p>E - Assombrar</p>
+                <p>C - Espreitador</p>
+                <p>X - Véu da Morte</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/gekko.jpg" class="flip-card-image" alt="gekko">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/initiator.png" alt="iniciador-simbolo">
+                <h1>gekko</h1>
+                <p>Q - Wingman</p>
+                <p>E - Dizzy</p>
+                <p>C - Mosh Pit</p>
+                <p>X - Thrash</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/harbor.jpg" class="flip-card-image" alt="harbor">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/controlador.png" alt="controlador-simbolo">
+                <h1>harbor</h1>
+                <p>Q - Enseada</p>
+                <p>E - Maré Alta</p>
+                <p>C - Cascata</p>
+                <p>X - Acerto de Contas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/iso.jpg" class="flip-card-image" alt="iso">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/duelista.png" alt="duelista-simbolo">            
+                <h1>iso</h1>                
+                <p>Q - Centelha Debilitante</p>
+                <p>E - Fluxo Protetor</p>
+                <p>C - Contingência</p>
+                <p>X - Contrato de Abate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/jett.jpg" class="flip-card-image" alt="jett">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/duelista.png" alt="duelista-simbolo">
+                <h1>jett</h1>
+                <p>Q - Corrente Ascendente</p>
+                <p>E - Brisa de Impulso</p>
+                <p>C - Erupção das Brumas</p>
+                <p>X - Tormenta de Aço</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/kayo.jpg" class="flip-card-image" alt="kayo">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/initiator.png" alt="iniciador-simbolo">
+                <h1>kay/o</h1>
+                <p>Q - Granada/Clarão</p>
+                <p>E - Ponto/Zero</p>
+                <p>C - Frag/Mento</p>
+                <p>X - Anular/CMD</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/killjoy.jpg" class="flip-card-image" alt="killjoy">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/sentinel.png" alt="sentinela-simbolo">
+                <h1>killjoy</h1>
+                <p>Q - Robô de Alarme</p>
+                <p>E - Torreta</p>
+                <p>C - Nanoenxame</p>
+                <p>X - Confinamento</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/neon.jpg" class="flip-card-image" alt="neon">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/duelista.png" alt="duelista-simbolo">
+                <h1>neon</h1>
+                <p>Q - Ricochete Elétrico</p>
+                <p>E - Equipamento Voltaico</p>
+                <p>C - Via Expressa</p>
+                <p>X - Sobrecarga</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/omen.jpg" class="flip-card-image" alt="omen">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/controlador.png" alt="controlador-simbolo">
+                <h1>omen</h1>
+                <p>Q - Paranoia</p>
+                <p>E - Manto Sombrio</p>
+                <p>C - Passos Tenebrosos</p>
+                <p>X - Salto das Sombras</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/phoenix.jpg" class="flip-card-image" alt="phoenix">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/duelista.png" alt="duelista-simbolo">
+                <h1>phoenix</h1>
+                <p>Q - Bola Curva</p>
+                <p>E - Mãos Quentes</p>
+                <p>C - Labareda</p>
+                <p>X - Renascimento</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/raze.jpg" class="flip-card-image" alt="raze">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/duelista.png" alt="duelista-simbolo">
+                <h1>raze</h1>
+                <p>Q - Carga de Explosivos</p>
+                <p>E - Cartuchos de Tinta</p>
+                <p>C - Bumba</p>
+                <p>X - Estraga-Prazeres</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/reyna.jpg" class="flip-card-image" alt="reyna">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/duelista.png" alt="duelista-simbolo">
+                <h1>reyna</h1>
+                <p>Q - Devorar</p>
+                <p>E - Dispensar</p>
+                <p>C - Olhar Voraz</p>
+                <p>X - Imperatriz</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/sage.jpg" class="flip-card-image" alt="sage">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/sentinel.png" alt="sentinela-simbolo">
+                <h1>sage</h1>
+                <p>Q - Orbe de Lentidão</p>
+                <p>E - Orbe Curativo</p>
+                <p>C - Orbe de Barreira</p>
+                <p>X - Ressureição</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/skye.jpg" class="flip-card-image" alt="skye">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/initiator.png" alt="iniciador-simbolo">
+                <h1>skye</h1>
+                <p>Q - Predador Explosivo</p>
+                <p>E - Luz Desbravadora</p>
+                <p>C - Reflorescer</p>
+                <p>X - Rastreadores</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/sova.jpg" class="flip-card-image" alt="sova">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/initiator.png" alt="iniciador-simbolo">
+                <h1>sova</h1>
+                <p>Q - Flecha de Choque</p>
+                <p>E - Flecha Rastreadora</p>
+                <p>C - Drone Coruja</p>
+                <p>X - Fúria do Caçador</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/viper.jpg" class="flip-card-image" alt="viper">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/controlador.png" alt="controlador-simbolo">
+                <h1>viper</h1>
+                <p>Q - Nuvem Venenosa</p>
+                <p>E - Cortina Tóxica</p>
+                <p>C - Veneno de Cobra</p>
+                <p>X - Poço Peçonhento</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="front">
+              <img src="img/agents/yoru.jpg" class="flip-card-image" alt="yoru">
+            </div>
+            <div class="back flip-card-image">
+              <div class="back-style">
+                <img class="cards-gif" src="img/duelista.png" alt="duelista-simbolo">
+                <h1>yoru</h1>
+                <p>Q - Ponto Cego</p>
+                <p>E - Passagem Dimensional</p>
+                <p>C - Falcatrua</p>
+                <p>X - Espionagem Dimensional</p>
+              </div>
+              <div id="menu-mapas"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carrossel de mapas -->
+
+  <div class="maps-slider">
+    <h2>Mapas</h2>
+    <div class="slideshow">
+      <figure>
+        <img class="maps" alt="ascent" src="img/maps/ascent.jpg" />
+        <figcaption class="maps-legenda">Ascent</figcaption>
+      </figure>
+      
+      <figure>
+        <img class="maps" alt="bind" src="img/maps/bind.jpg" />
+        <figcaption class="maps-legenda">Bind</figcaption>
+      </figure>
+      
+      <figure>
+        <img class="maps" alt="breeze" src="img/maps/breeze.jpg" />
+        <figcaption class="maps-legenda">Breeze</figcaption>
+      </figure>
+      
+      <figure>
+        <img class="maps" alt="fracture" src="img/maps/fracture.jpg" />
+        <figcaption class="maps-legenda">Fracture</figcaption>
+      </figure>
+      
+      <figure>
+        <img class="maps" alt="haven" src="img/maps/haven.jpg" />
+        <figcaption class="maps-legenda">Haven</figcaption>
+      </figure>
+      
+      <figure>
+        <img class="maps" alt="icebox" src="img/maps/icebox.jpg" />
+        <figcaption class="maps-legenda">Icebox</figcaption>
+      </figure>
+      
+      <figure>
+        <img class="maps" alt="lotus" src="img/maps/lotus.jpg" />
+        <figcaption class="maps-legenda">Lotus</figcaption>
+      </figure>
+      
+      <figure>
+        <img class="maps" alt="pearl" src="img/maps/pearl.jpg" />
+        <figcaption class="maps-legenda">Pearl</figcaption>
+      </figure>
+      
+      <figure>
+        <img class="maps" alt="split" src="img/maps/split.jpg" />
+        <figcaption class="maps-legenda">Split</figcaption>
+      </figure>
+      
+      <figure>
+        <img class="maps" alt="sunset" src="img/maps/sunset.jpg" />
+        <figcaption class="maps-legenda">Sunset</figcaption>
+      </figure>
+      
+      <span class="prev" style="display: none;"><i class="fas fa-angle-left fa-4x"></i></span>
+      <span class="next" style="display: none;"><i class="fas fa-angle-right fa-4x"></i></span>
+
+      <div id="menu-armas"></div>
+    </div>
+  </div>
+
+   <!-- Carrossel de armas -->
+
+  <section class="guns-container">
+
+    <div class="guns-section">
+      <h2>Armas</h2>
+    <div class="gun-slideshow">
+        <figure>
+          <img class="guns" alt="classic" src="img/armas/1classic.png" />
+          <figcaption class="guns-legenda">Classic</figcaption>
+        </figure>
+
+        <figure>
+          <img class="guns" alt="shorty" src="img/armas/2shorty.png" />
+          <figcaption class="guns-legenda">Shorty</figcaption>
+        </figure>
+
+        <figure>
+          <img class="guns" alt="frenzy" src="img/armas/3frenzy.png" />
+          <figcaption class="guns-legenda">Frenzy</figcaption>
+        </figure>
+
+        <figure>
+          <img class="guns" alt="ghost" src="img/armas/4ghost.png" />
+          <figcaption class="guns-legenda">Ghost</figcaption>
+        </figure>
+
+        <figure>
+          <img class="guns" alt="sheriff" src="img/armas/5sheriff.png" />
+          <figcaption class="guns-legenda">Sheriff</figcaption>
+        </figure>
+
+        <figure>
+          <img class="guns" alt="stinger" src="img/armas/6stinger.png" />
+          <figcaption class="guns-legenda">Stinger</figcaption>
+        </figure>
+
+        <figure>
+          <img class="guns" alt="spectre" src="img/armas/7spectre.png" />
+          <figcaption class="guns-legenda">Spectre</figcaption>
+        </figure>
+
+        <figure>
+          <img class="guns" alt="bucky" src="img/armas/8bucky.png" />
+          <figcaption class="guns-legenda">Bucky</figcaption>
+        </figure>
+
+        <figure>
+          <img class="guns" alt="judge" src="img/armas/9judge.png" />
+          <figcaption class="guns-legenda">Judge</figcaption>
+        </figure>
+
+        <figure>
+          <img class="guns" alt="bulldog" src="img/armas/10bulldog.png" />
+          <figcaption class="guns-legenda">Bulldog</figcaption>
+        </figure>
+
+        <figure>
+          <img class="guns" alt="guardian" src="img/armas/11guardian.png" />
+          <figcaption class="guns-legenda">Guardian</figcaption>
+        </figure>
+
+        <figure>
+          <img class="guns" alt="phantom" src="img/armas/12phantom.png" />
+          <figcaption class="guns-legenda">Phantom</figcaption>
+        </figure>
+
+        <figure>
+          <img class="guns" alt="vandal" src="img/armas/13vandal.png" />
+          <figcaption class="guns-legenda">Vandal</figcaption>
+        </figure>
+
+        <figure>
+          <img class="guns" alt="marshal" src="img/armas/14marshal.png" />
+          <figcaption class="guns-legenda">Marshal</figcaption>
+        </figure>
+
+        <figure>
+          <img class="guns" alt="outlaw" src="img/armas/15outlaw.png" />
+          <figcaption class="guns-legenda">Outlaw</figcaption>
+        </figure>
+
+        <figure>
+          <img class="guns" alt="operator" src="img/armas/16operator.png" />
+          <figcaption class="guns-legenda">Operator</figcaption>
+        </figure>
+
+        <figure>
+          <img class="guns" alt="ares" src="img/armas/17ares.png" />
+          <figcaption class="guns-legenda">Ares</figcaption>
+        </figure>
+
+        <figure>
+          <img class="guns" alt="odin" src="img/armas/18odin.png" />
+          <figcaption class="guns-legenda">Odin</figcaption>
+        </figure>
+
+        <figure>
+          <img class="guns" alt="faca" src="img/armas/19faca.png" />
+          <figcaption class="guns-legenda">Faca</figcaption>
+        </figure>
+        
+        <span class="prev" style="display:none;"><i class="fas fa-angle-left fa-2x"></i></span>
+        <span class="next" style="display:none;"><i class="fas fa-angle-right fa-2x"></i></span>
+      </div>
+    </div>
+  </section>
+
+   <!-- Footer -->
+
+  <footer class="footer">
+    <div class="container">
+      <h2 class="footer__logo">Valorant Infos</h2>
+
+      <p class="text-footer">Essa página foi desenvolvida com o intuíto de aprimorar os conhecimentos do estudante Lucas Zocca Fonceca no desenvolvimento Front-end, utilizando ferramentas como HTML, CSS e JavaScript, sem qualquer intuito monetário.</p>
+
+      <p class="text-footer">As imagens e informações dessa página são do jogo "Valorant" e foram usadas apenas como estética e inspiração na criação da página. Tais imagens foram retiradas de diferentes sites na web e não serão utilizadas para obter renda.</p>
+    </div>
+  </footer>
+
+   <!-- Scripts -->
+
+  <script src="js/menu.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

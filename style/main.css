@@ -1,0 +1,582 @@
+:root{
+    --wineColor: linear-gradient(to bottom, black, darkred);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+img{
+    max-width: 100%;
+}
+.container{
+    margin-right: auto;    
+    margin-left: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 980px;
+}
+
+.header{
+    background: #fff;
+    width: 100%;
+}
+
+.js .header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo-text{
+    text-transform: uppercase;
+    background-color: darkred;
+    font-size: 24px;
+    margin: 0;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    float: left;
+    text-align: right;
+}
+
+.header__nav{
+    clear: left;
+}
+.header__nav ul{
+    margin: 0;
+    padding: 0;
+}
+.header__nav li {
+    list-style-type: none;
+    background: #242c2c;
+    text-align: center;
+    border-bottom: 1px dotted rgba(255,255,255, 0.2);
+}
+.header__nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #586165;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    padding: 25px 0;
+    transition: .8s ease;
+}
+
+.header__nav a:hover{
+    color: darkred;
+}
+
+.header__btnMenu{
+    float: right;
+    margin: 1.5em;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    transition: .5s;
+}
+
+.header__btnMenu:hover{
+    cursor: pointer;
+    color: darkred;
+}
+
+.js .header__nav{
+    transition: max-height 1s;
+}
+
+.js .maps-slider{
+    overflow: hidden;
+    color: white;
+}
+.js .maps-slider .slideshow{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 950px;
+}
+.js .maps-slider figure{
+    opacity: 0;
+    transition: 1s opacity;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.js .maps-slider figure.show{
+    opacity: 1;
+    position: static;
+    
+}
+.js .maps-slider .prev, .js .maps-slider .next{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+.js .maps-slider .prev{
+    left: 10px;
+}
+.js .maps-slider .next{
+    right: 10px;
+}
+
+
+
+
+
+.js .guns-section{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 950px;
+    box-sizing: border-box;
+    padding: 0 50px;
+    color: white;
+}
+.js .guns-section figure h2{
+    margin-top: 0;
+}
+.js .guns-section figure{
+    opacity: 0;
+    transition: 1s opacity;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 50px;
+    box-sizing: border-box;
+    margin: 0;
+}
+.js .guns-section figure.show{
+    opacity: 1;
+    position: static;
+    
+}
+.js .guns-section .prev, .js .guns-section .next{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+.js .guns-section .prev{
+    left: 10px;
+}
+.js .guns-section .next{
+    right: 10px;
+}
+
+
+.hero{
+    height: 80vh;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background: url(../img/valorant-capa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.hero__title{
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+    padding: 0px 20px;
+    text-transform: uppercase;
+}
+
+.hero__text{
+    margin: 5px 30px 35px;
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.hero__btn{
+    background-color: darkred;
+    border-radius: 5px;
+    padding: 15px 25px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+
+.agent-cards{
+    margin-top: 2.5em;
+    transition: .5s;
+}
+
+.agent-cards__card:hover{
+    outline: 5px solid rgb(92, 9, 9);
+    outline-offset: -5px;
+}
+
+.agent-cards__card:hover .agent-cards__title,
+.agent-cards__card:hover .agent-cards__text{
+    color: var(--wineColor);
+}
+
+.agent-cards__image{
+    width: 100%;    
+    max-height: 510px;
+}
+
+.agent-cards__avatar{
+    margin: -55px auto;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background-image: var(--wineColor);
+    position: relative;
+}
+.agent-cards__avatar:hover{
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.agent-cards__content{
+    text-align: center;
+    padding: 40px 25px 10px;
+    border: 1px solid darkred;
+    margin-bottom: 1em;
+}
+.agent-cards__title{
+    color: #737c85;
+    font-size: 21px;
+    font-weight: normal;
+    margin-top: 1em;
+}
+.agent-cards__text{
+    color: #929da5;
+    font-size: 14px;
+}
+
+
+
+
+.flip-agents__title{
+    background-color: darkred;
+    padding: 5px 0;
+    margin-top: 2em;
+}
+
+.flip-agents__title h2{
+    font-size: 48px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    font-weight: bold;
+}
+
+.flip-agents__thumbs{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: auto;
+    background: var(--wineColor);
+    padding: 1.5em;
+    gap: 1em;    
+}
+
+
+
+
+
+
+.card-container{
+    height: 640px;
+    width: 268px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flip-card{
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+}
+
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(-180deg);
+}
+
+.flip-card .back{
+    transform: rotateY(-180deg);
+}
+
+.flip-card-inner{
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.back,
+.front{
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flip-card-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.back-style{
+    background-color: white;
+    border-radius: 8px;
+    width: 268px;
+    height: 640px;
+    text-align: center;
+}
+
+.back-style h1{
+    text-transform: uppercase;
+    padding-top: 1em;
+}
+
+.cards-gif{
+    background-color: darkred;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-top: 3em;
+}
+
+
+
+
+
+
+
+.maps-slider{
+    background-color: #242a2c;
+    border-bottom: 12px solid rgb(26, 24, 24);
+    padding: 50px 0 100px;
+    width: 100%;
+    overflow: auto;
+}
+
+.maps-slider h2,
+.guns-section h2{
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.maps{    
+    border-radius: 10px;
+    box-shadow: 0px 0px 100px rgba(139, 0, 0, 0.5);
+}
+
+.maps-legenda,
+.guns-legenda{
+    text-align: center;
+    margin-top: .4em;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.slideshow{
+    display: grid;
+    grid-template-columns: 1fr auto-fill 1fr;
+    align-items: center; 
+    gap: 10px;
+}
+
+.slideshow figure{
+    margin: 0;
+}
+
+.prev, .next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev{
+    grid-column: 1;
+    color: white;
+}
+
+.next{
+    grid-column: 3;
+    color: white;
+}
+
+
+
+
+.guns-container{
+    background-color: darkred;
+    padding: 50px 0;
+    border-bottom: 12px solid red;
+    height: 50vh;
+}
+
+.no-js .guns-section figure + figure{
+    margin-top: 5em;
+}
+
+
+.guns{
+    height: 30vh;  
+}
+
+.guns-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.gun-slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gun-slideshow figure {
+    margin: 0 10px; 
+}
+
+
+
+
+
+
+.footer{
+    background-color: #242a2c;
+    padding: 50px 0 250px;
+    color: #454e51;
+    font-size: 14px;
+}
+
+.footer__links li{
+    list-style: none;
+}
+.footer__links a{
+    color: #454e51;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer__logo{
+    text-transform: uppercase;
+    display: flex;
+    text-align: center;
+}
+
+.text-footer{
+    text-align: justify;
+}
+
+
+
+
+
+@media screen and (min-width: 1025px){
+    .header{
+        position: fixed;
+    }
+    
+    .logo-text{
+        width: 25%;
+        box-sizing: border-box;
+    }
+    
+    .header__btnMenu{
+        display: none;
+    }
+    
+    .header__nav{
+        float: left;
+        width: 75%;
+        clear: none;
+        max-width: 800px;
+    }
+    
+    .header__nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .header__nav li {
+        border-bottom: none;
+        flex-grow: 1;
+    }
+    
+    .header__nav a{
+        background: white;        
+    }
+    
+    
+    .agent-cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+    }
+
+    .agent-cards__image{
+        width: 100%;
+        max-height: 154px;
+    }
+
+    .agent-cards__content{
+        margin-bottom: 0;
+    }
+
+    .agent-cards__text{
+        height: 220px;
+    }
+    
+    
+    
+    .content .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+
+
+
+    
+    .footer .container{
+        display: flex;
+    }
+    .footer .container > * {
+        margin: 1.5em;
+    }
+}
